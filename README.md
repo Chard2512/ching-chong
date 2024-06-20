@@ -1,2 +1,2 @@
 # ching-chong
-A simple Pong clone made in python for educational purposes.
+A simple Pong clone made with pygame for educational purposes.
