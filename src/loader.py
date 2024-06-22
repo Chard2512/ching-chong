@@ -1,7 +1,13 @@
-from context import GameContext
+from context import GameEditorContext
 import scripts
 
 def init(game_instance):
-    context = GameContext(game_instance)
+    context = GameEditorContext(game_instance)
 
-    scripts.circle_in_the_center(context)
+    player = scripts.player_rectangle(context)
+    ball = scripts.create_ball(context)
+
+    
+    scripts.zero_gravity(context)
+
+    return player, ball
